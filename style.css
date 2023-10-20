@@ -1,0 +1,341 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    cursor:pointer;
+    font-family: sans-serif;
+}
+body{
+    width:100%;
+    min-height:100vh;
+    background-image:url("honey2.jpg");
+    background-size:100% auto;
+    }
+header{
+    display: flex;
+    justify-content: space-between;  
+    padding:30px 20px;
+    color:blue ;
+}
+nav li{
+    display:inline-block;
+    margin: 10px 20px;
+    font-weight: 600; 
+    font-size: 25px; 
+    font-family: sans-serif; 
+    margin-left: 10%;
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+.main{
+    width: 100%;
+    display:flex;
+}
+.content{
+    width:50%;
+    margin-top:8%;
+    margin-left:5%;
+    color:black;
+}
+h1{
+    font-size:50px;
+}
+h2{
+  color:cyan;
+  font-size:40px;  
+}
+.content h3{
+    font-size: 100px;
+    margin-top:10%;
+    margin-bottom: 8%;
+    letter-spacing:8px;
+    margin-left: 25%;
+    font-family: sans-serif;
+    color:rgba(255,6,135,0.984);
+}
+.content h4{
+    font-size: 35px;
+    margin-top:-3;
+    margin-bottom: 5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:#0056b3;
+}
+span {
+    color:white;
+    font-size:35px;
+    margin-bottom:1%;
+    font-family:sans-serif ;
+}
+button{
+    padding: 25px 40px;
+    background: white;
+    color: black;
+    font-size: 30px;
+    border-radius: 15px;
+}
+button:hover{
+    background:rgb(255,4,121,0.963);
+}
+title{
+    font-size: 88px;
+    font-weight: 900;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+}
+title::before,
+title::after{
+    content:attr(data-text);
+    position:absolute;
+    top:0;font-size:88px;
+    font-weight: 900;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    left:0;
+    transition: 0.3s ease-out;
+}
+footer{
+    color:white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    margin-left: 5%;
+}
+social-media ul li{
+    margin-left: 20%;
+    font-size:11px;
+    color:blue;
+    font-size:50px;
+}
+.social-media h3{
+    font-size:50px;
+    margin-top: 2%;
+    margin-left: 20%;
+    color:red;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.social-media ul li a
+{
+    color: cyan;
+
+ }  
+ h4{
+    color:red;
+    font: size 50px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-left: 1%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+ }
+#form{
+    width:400px;
+    margin:20vh auto 0 auto;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    padding:30px;
+}
+.registration-wrapper {
+    background-image:url("images/q1.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content:flex-end;
+    align-items: flex-start;
+    position:relative;
+    z-index: 1;
+    width: 100%; 
+    height:100vh;
+    min-height: auto;
+    padding: 60px 0; 
+    }
+    .registration-text {
+        font-size: 35px;  
+        color:black;     
+        position: absolute;  
+        left: 300px;  
+        bottom: 75%;  
+        transform: translateY(50%);  
+    }
+    .highlight {
+        color: #ff4500;  
+    }
+    .registration-image {
+        position: absolute; 
+        left: 300px;  
+        bottom: 40%;  
+        transform: translateY(50%);  
+        width: 800px;  
+        height: auto;  
+    }
+    
+    
+
+.registration-section {
+    width: 100%;
+    color:#333;
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ 
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #ddd; 
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    background: rgba(14, 173, 8, 0.1); 
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #ddd;
+    transition: border-color 0.3s, background-color 0.3s; 
+}
+
+.input-group input:focus {
+    border-color: darksalmon;
+    background-color:rgba(255, 255, 255, 0.05);
+    outline: none;
+}
+.input-group {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+
+
+.input-group select {
+    width: 100%;
+    padding: 25px;
+    font-size: 28px;
+    background:#ddd;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    box-sizing: border-box;
+    color:black;
+    transition: border-color 0.3s, background-color 0.3s;
+    appearance: none; 
+}
+.input-group select:focus {
+    border-color: darksalmon;
+    background-color: rgba(255, 255, 255, 0.05);
+    outline: none;
+}
+
+.input-group select option {
+    color: #000;  
+}
+select:invalid::cue {
+    font-size: 20px; 
+}
+.register-btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: darksalmon;
+    border: none;
+    border-radius: 18px;
+    color: black;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.register-btn:hover {
+    background-color: #e57a7a;
+}
+
+.registration-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.registration-section label {
+    font-size: 2.5em;
+    margin-bottom:10px;
+}
+
+.registration-section input {
+    font-size: 1.8em;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.3); 
+    padding: 10px 15px;
+}
+
+.registration-section input::placeholder {
+    font-size: 18px;
+    color: #888; 
+}
+.custom-validation-message {
+    font-size: 18px;  
+  
+}
+.registration-section label {
+    color: #444;
+}
+
+.registration-box {
+    position: absolute;
+    top:200px;
+    right:250px;
+    background-color:#fff;
+    padding: 10px 30px;
+    border-radius: 40px 30px 40px 50px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 80%;
+    margin:50px;
+}
+.registration-box h2 {
+    margin-top: 20px;  
+}
+.registration-box input[type="password"] {
+    width: 100%;   
+    padding: 15px 20px;  
+.registration-box select {
+    width: 100%;  
+    padding: 15px;  
+}
+} 
+.registration-box .input-group:last-child {
+    margin-bottom: 20px;  
+}
+.registration-box .register-btn {
+    margin-bottom: 20px;
+    padding: 20px 40px;    
+}
+.registration-section input[type="text"],
+.registration-section input[type="email"],
+.registration-section input[type="password"],
+.registration-section select {
+    color: #333;  
+}
+
+
+

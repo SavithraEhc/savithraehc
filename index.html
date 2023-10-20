@@ -1,0 +1,186 @@
+<html>
+<head>
+    <title>
+        TECHNO COLLEGE
+    </title>
+    <link rel="stylesheet"href="style.css">
+       </div>      
+<h1 style="color:blue;text-align:center;">TECHNO COLLEGE</h1>
+<body background="c:\ELECOT\DESKTOP\honey2.jpg">
+    <header>
+    <h2>TECHNO COLLEGE</h2>
+        <nav>
+    <li>HOME</li>
+    <li>COURSES</li>
+    <li>EVENT</li>
+    <li>PAGES</li>
+    <li>TEACHERS</li>
+    <li>CONTACT</li>
+        </nav>
+    </header>
+   <div class="main">
+    <div class="content">
+        <h3> TECHNO FUTURE</h3>
+        <h4>TECHNO <span>"FUTURE TECH" TECHNO Institute of    Technology and Science .
+            (FTIS) located in Chennai, Tamil Nadu was established
+             in the year 1985.
+             FTIS is recognized as a Deemed University 
+            under section 3 of the UGC Act 1956.
+            TECH University offers various  courses available   Diploma,
+            PG Diploma, M.Phil.and PhD courses in the fields of Engineering, 
+            Management, Science Arts, and Commerce.   </span></h4>
+        <button> GET STARTED</button>
+        <button> VIEW COURSES</button>
+    </div>
+   </div>
+<footer>
+<div class="contact">
+    <h4>Contact</h4>
+    <p>collage street</p>
+    <p>coimbatore,banglore</p>
+    <p>Email:TECHNO@collage.edu</p>
+    <p>phone:+1(123) 456-7890</p>
+    </div>
+    <div class="social-media">
+    <h3>Follow us</h3>
+    <ul>
+<li><a href="#"><img src="./s.facebook"width="2%"alt="facebook">Facebook</a></li>
+<li><a href="#"><img src="./s.twitter"width="2%"alt="twitter">Twitter</a></li>
+<li><a href="#"><img src="./s.linkedin"width="2%"alt="linkedin">Linkedin</a></li>
+<li><a href="#"><img src="./s.insta"width="2%"alt="insta">Instgram</a></li>
+<li><a href="#"><img src="./s.whatsapp"width="2%"alt="whatsapp">Whatsapp</a></li>
+    </div>
+</ul>
+    <div class="copyright">
+        <p>&copy;savithra Emerald heights college for women</p>
+        </div>
+        </footer>
+        </body>
+        </html>
+    </head>
+    <div class="registration-wrapper">  
+        <div class="registration-section" id="register">
+            <div class="registration-text">
+
+               </div>
+
+            <div class="registration-box">
+            <h2> <center>Register Form </center> </h2>
+            <form id="registrationForm">
+                <div class="input-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required placeholder="Name">
+                </div>
+                <div class="input-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="abc@gmail.com">
+                    <span id="emailError" style="color: red;"></span>
+
+                </div>
+                <div class="input-group">
+                    <label for="course">Select Course:</label>
+                    <select id="course" name="course" required>
+                        <option value="">Choose a course...</option>
+                        <option value="artificial_intelligence">Artificial Intelligence</option>
+                        <option value="data_science">Data Science</option>
+                        <option value="data_structure">Data Structures</option>
+                        <option value="machine_learning">Machine Learning</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                   <label for="password">Password:</label>
+                   <input type="password" id="password" name="password" required placeholder="Enter 8-digit password">
+
+                  
+               </div>
+               <div class="input-group">
+                   <label for="confirm_password">Confirm Password:</label>
+                   <input type="password" id="confirm_password" name="confirm_password" required placeholder="Confirm password">
+
+               </div>
+               <button type="submit" class="register-btn">Register</button>
+
+           </form>
+       </div>
+   </div>
+</div>
+
+<script>
+   function isValidEmail(email) {
+         const regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+           return regex.test(email);
+}
+
+function setError(element, message) {
+alert(message);
+element.focus();
+}
+
+const hasUpperCase = string => /[A-Z]/.test(string);
+const hasLowerCase = string => /[a-z]/.test(string);
+const hasSpecialChar = string => /[!@#$%^&*(),.?":{}|<div>]/.test(string);
+
+function handleRegistration() {
+const name = document.getElementById('name').value;
+const email = document.getElementById('email').value;
+const password = document.getElementById('password').value;
+const confirmPassword = document.getElementById('confirm_password').value;
+
+// Validate Email
+if (!isValidEmail(email)) {
+setError(email, 'Provide a valid email address');
+return;
+}
+
+// Validate Password
+if (password.length < 8 ) {
+setError(document.getElementById('password'), 'Password must be at least 8 characters.');
+return;
+}
+if (!hasUpperCase(password)) {
+setError(document.getElementById('password'), 'Password must have at least one uppercase letter.');
+return;
+}  
+if (!hasLowerCase(password)) {
+        setError(document.getElementById('password'), 'Password must have at least one lowercase letter.');
+        return;
+    }
+    if (!hasSpecialChar(password)) {
+        setError(document.getElementById('password'), 'Password must have at least one special character.');
+        return;
+    }
+
+    if (password !== confirmPassword) {
+        setError(document.getElementById('confirm_password'), "Passwords don't match");
+        return;
+    }
+
+    // You can now process the form (e.g., send it to the server).
+    alert(`Name: ${name}\nEmail: ${email}\nPassword: ${password}`);
+    alert('Provide a valid email address');
+    document.getElementById('emailError').innerText = 'Provide a valid email address';
+
+}
+
+document.getElementById("registrationForm").addEventListener("submit", function(event) {
+    event.preventDefault(); 
+    handleRegistration();
+    document.getElementById("togglePassword").addEventListener("click", function() {
+    toggleVisibility('password');
+});
+
+});
+</script>
+</div>
+</div>
+
+  
+     
+      
+                    
+        
+
+
+    
+
+    
